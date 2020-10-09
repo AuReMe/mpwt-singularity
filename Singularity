@@ -23,11 +23,11 @@ From: ubuntu:18.04
      apt-get clean; \
      apt-get purge; \
      mkdir programs;\
-     mkdir -p /home/abelcour/Downloads/work_directory/programs/mpwt-singularity;\
+     mkdir -p /home/your/external/folder/ptools;\
      chmod u+x /opt/pathway-tools-24.0-linux-64-tier1-install;\
-     ./opt/pathway-tools-24.0-linux-64-tier1-install --InstallDir /programs/pathway-tools --PTOOLS_LOCAL_PATH /home/abelcour/Downloads/work_directory/programs/mpwt-singularity --InstallDesktopShortcuts 0 --mode unattended;\
+     ./opt/pathway-tools-24.0-linux-64-tier1-install --InstallDir /programs/pathway-tools --PTOOLS_LOCAL_PATH /home/your/external/folder/ptools --InstallDesktopShortcuts 0 --mode unattended;\
      mkdir -p /opt/ptools;\
-     cp -r /home/abelcour/Downloads/work_directory/programs/mpwt-singularity/ptools-local /opt/ptools;\
+     cp -r /home/your/external/folder/ptools/ptools-local /opt/ptools;\
      rm /opt/pathway-tools-24.0-linux-64-tier1-install;\
      curl https://bootstrap.pypa.io/get-pip.py | python3;\
-     pip3 install https://github.com/AuReMe/mpwt/archive/master.zip
+     pip3 install mpwt
