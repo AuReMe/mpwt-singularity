@@ -9,6 +9,7 @@ From: ubuntu:20.04
     export PYTHONIOENCODING=utf8
 
 %post
+     # Use a PPA of Ubuntu 18.04 to download libssl1.0-dev.
      echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list ;\
      apt-get -y update && \
      DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -21,9 +22,9 @@ From: ubuntu:20.04
      libxm4 \
      libssl1.0-dev \
      iputils-ping \
-     gnome-terminal;\
-     apt-get clean; \
-     apt-get purge; \
+     gnome-terminal ;\
+     apt-get clean ;\
+     apt-get purge ;\
      mkdir programs ;\
      mkdir -p /home/your/external/folder/ptools ;\
      chmod u+x /opt/pathway-tools-25.0-linux-64-tier1-install ;\
