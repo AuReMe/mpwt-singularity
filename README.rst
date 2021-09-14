@@ -4,7 +4,7 @@ mpwt Singularity recipe
 Singularity recipe for `Pathway-Tools <https://bioinformatics.ai.sri.com/ptools/>`__ and `mpwt <https://github.com/AuReMe/mpwt>`__.
 There is no guarantee that this recipe will work, it is a Work In Progress in early state.
 
-There must be a Pathway Tools installer in the smae folder than the ``Singularity`` file:
+There must be a Pathway Tools installer in the same folder than the ``Singularity`` file:
 
 ::
 
