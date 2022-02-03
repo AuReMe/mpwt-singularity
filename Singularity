@@ -29,5 +29,5 @@ From: ubuntu:18.04
      mkdir -p /opt/ptools;\
      cp -r /home/your/external/folder/ptools/ptools-local /opt/ptools;\
      rm /opt/pathway-tools-24.0-linux-64-tier1-install;\
-     curl https://bootstrap.pypa.io/get-pip.py | python3;\
+     curl https://bootstrap.pypa.io/pip/3.6/get-pip.py | python3;\
      pip3 install mpwt
